@@ -5,15 +5,14 @@
 % In the end the fuction will save the file to the destination path and
 % return the image
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-function [HEImage] = HistogramEqualizationFunction(sourceImagePath)
-    sourceImage = imread(sourceImagePath);
+function [HEImage,HEImageHistogram] = HistogramEqualizationFunction(sourceImage)
     
-    %Get the number of rows&colunms in the image matrix for iteration and the total number of pixels 
+    %Get the number of rows&colunms in the image matrix (for iteration) and the total number of pixels 
     rows = size(sourceImage,1);
     columns = size (sourceImage,2);
     totalPixels = rows * columns;
     
-    %Create a frequency array full of zeros
+    %Create a frequency array full of zeros (0-255 gret levels)
     frequency = (zeros(256,1));
     
     %Iterate throught every pixel in the image add calculate the grey level
@@ -32,33 +31,46 @@ function [HEImage] = HistogramEqualizationFunction(sourceImagePath)
     %Create a probability distribution function array full of zeros
     pdf=(zeros(256,1));
     
-    %Calculate the Probability Distribution Function
-    %(the precentage of a grey level pixel in the picture (between 0-1)  
+    %Calculate the probability distribution function
+    %(the precentage of a grey level pixel in the picture (between 0-1))  
     for i=1:256
         pdf(i)=frequency(i)/totalPixels;
     end
     
-    for i=1:256
-        frequency
+    %Create a cummulative probability distribution function array full of zeros
+    cdf=(zeros(256,1));
+    
+    %Calculate the cummulative probability distribution function
+    %(***)   
+    cdf(1) = pdf(1);
+    for i=2:256
+        %adding the pdf value to the cfd array
+        cdf(i)= cdf(i-1)+ pdf(i);
     end
     
-    
-    
-   
-    cummulativeDistributionFunction=(zeros(256,1));
-    cummulative = (zeros(256,1));
+    %Create an *** array full of zeros
     output = (zeros(256,1));
     
+    %Calculate the ** total results.
+    %(***)   
+    for i=1:256
+        output(i) = round(cdf(i)*255); 
+    end
     
+    %initialize array for the new image
+    HEImage=uint8(zeros(rows,columns));
     
+    %apply the output array on the original image to create a histogram equalized image 
+    for i=1:rows
+        for j=1:columns
+			HEImage(i,j)=output(sourceImage(i,j)+1);
+        end
+    end
     
-    
-    
-
-    
-    
-        
-    HEImage =  sourceImage;
+    %create a histogram of the new image
+    HEImageHistogram = CreateHistogram(HEImage);
 end
+
+
 
 

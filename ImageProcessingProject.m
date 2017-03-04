@@ -7,16 +7,44 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %Question 1 Histogram Equalization
-workingDirectory = 'H:\Downloads\Image Processing\';
-sourceImagePath = 'H:\Downloads\Image Processing\Mountains_Greyscale.jpg';
-destImagePath = 'H:\Downloads\Image Processing\Mountains_GreyscaleHE.jpg';
 
-%calling the function 
-HEImage = HistogramEqualizationFunction(sourceImagePath);
+%Define paths for files
+workingDirectory = 'D:\Git\Private\ImageProcessingProject';
+sourceImagePath = 'D:\Git\Private\ImageProcessingProject\Mountains_Greyscale.jpg';
+sourceHistogramPath = 'D:\Git\Private\ImageProcessingProject\Mountains_Greyscale_Histogram.jpg';
+destImagePath = 'D:\Git\Private\ImageProcessingProject\Mountains_GreyscaleHE.jpg';
+destHistogramPath = 'D:\Git\Private\ImageProcessingProject\Mountains_GreyscaleHE_Histogram.jpg';
 
-%compare the original image and compare the results
-figure('Name','Before Histogram Equalization','NumberTitle','off'),imshow(sourceImagePath);
-figure('Name','After Histogram Equalization','NumberTitle','off'),imshow(HEImage);
+% Get the original image and convert it to a greyscale image
+sourceImage = imread(sourceImagePath);
+sourceImage = rgb2gray(sourceImage);
 
-%save the results
-imwrite(HEImage,destImagePath);
+%display the source image and the histogram for that image and save results
+figure('Name','Source Image - Before Histogram Equalization','NumberTitle','off'),imshow(sourceImage);
+sourceImageHistogram = CreateHistogram(sourceImage);
+figure('Name','Source Image - Before Histogram Equalization','NumberTitle','off'),bar(sourceImageHistogram);
+imwrite(sourceImageHistogram,sourceHistogramPath);
+
+%calling our histogram equalization function 
+HEImage,destImageHistogram= HistogramEqualizationFunction(sourceImage);
+
+%display the image after the histogram equalization and the histogram for
+%that image and save results
+figure('Name','Dest Image - After Histogram Equalization','NumberTitle','off'),imshow(HEImage);
+figure('Name','Dest Image Histogram - After Histogram Equalization','NumberTitle','off'),bar(destImageHistogram);
+imwrite(destImageHistogram,destHistogramPath);
+
+%Compare the the histeq function built in to matlab
+MLHEImage = histeq(uint8(sourceImage));
+
+%display the image after the built in matlab histogram equalization and the histogram for
+%that image
+figure('Name','After MatLab Histogram Equalization','NumberTitle','off'),imshow(MLHEImage);
+
+%Display the histogram of the matlab equalization
+MLHEImageHistogram = CreateHistogram(MLHEImage);
+figure('Name','After MatLab Histogram','NumberTitle','off'),bar(MLHEImageHistogram);
+
+
+
+
