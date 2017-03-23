@@ -54,6 +54,8 @@ MLHEImageHistogram = CreateHistogram(MLHEImage);
 figure('Name','After MatLab Histogram','NumberTitle','off'),bar(MLHEImageHistogram);
 
 
-%Question 1 Histogram Equalization
+%Question 2 Image Sharpning 
+
+
 
 
