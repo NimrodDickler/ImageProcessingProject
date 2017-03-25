@@ -5,9 +5,9 @@
 % 
 % 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%{
-%Question 1 Histogram Equalization
 
+%Question 1 Histogram Equalization
+%{
 %Define paths for files
 workingDirectory = 'D:\Git\Private\ImageProcessingProject\imgs';
 addpath(workingDirectory);
@@ -55,6 +55,7 @@ figure('Name','After MatLab Histogram','NumberTitle','off'),bar(MLHEImageHistogr
 %}
 
 %Question 2 Image Sharpning
+%{
 sourceImagePath = 'D:\Git\Private\ImageProcessingProject\imgs\Tiger.jpg';
 
 % Get the original image and convert it to a greyscale image
@@ -66,9 +67,7 @@ figure('Name','Image Before Sharpening','NumberTitle','off'),imshow(sourceImage)
 sharpRate = 5;
 sharpImage = imageSharpening(sourceImage,sharpRate);
 figure('Name','Image After Sharpening','NumberTitle','off'),imshow(sharpImage);
-
-
-
+%}
 
 
 
