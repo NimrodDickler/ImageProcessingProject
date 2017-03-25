@@ -1,0 +1,3 @@
+http://docs.opencv.org/2.4/modules/imgproc/doc/feature_detection.html?highlight=houghlines
+
+http://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_houghlines/py_houghlines.html
