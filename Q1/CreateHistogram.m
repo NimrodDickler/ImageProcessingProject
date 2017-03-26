@@ -9,4 +9,5 @@ function [imageHist] = CreateHistogram(image)
     
     %create the histogram
     imageHist=hist(imageHistData,0:255);
+    imshow(imageHist);
 end

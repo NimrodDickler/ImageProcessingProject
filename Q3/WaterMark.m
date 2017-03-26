@@ -1,9 +1,10 @@
-clear all
-close all
+function WaterMark(URL)
+
+
 
 
 %reads the image in double format
-imageAfterDouble = double(imread('Tiger.jpg'));
+imageAfterDouble = double(imread(URL));
 figure,imshow(imageAfterDouble/255);
 secondCopyOfImage = imageAfterDouble;
 [rows,cols] = size(secondCopyOfImage);

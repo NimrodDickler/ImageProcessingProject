@@ -1,7 +1,8 @@
-function [] = ComponnentsCounter(image)
+function [] = ComponnentsCounter(image,treshHold)
    
+    image = imread(image); 
     newSizeImage = imresize(image, [500 500]);
-    newSizeImage = im2bw(newSizeImage,0.7);
+    newSizeImage = im2bw(newSizeImage,treshHold);
    % figure('Name','newSizeImage','NumberTitle','off'),imshow(newSizeImage);
     visited = false(size(newSizeImage));
     [rows,cols] = size(newSizeImage);

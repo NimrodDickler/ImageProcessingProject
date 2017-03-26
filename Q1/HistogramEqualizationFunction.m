@@ -69,6 +69,8 @@ function [HEImage,HEImageHistogram] = HistogramEqualizationFunction(sourceImage)
     
     %create a histogram of the new image
     HEImageHistogram = CreateHistogram(HEImage);
+    imshow(HEImageHistogram);
+    
 end
 
 
