@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 
 
-img = cv2.imread('D:\Git\Private\ImageProcessingProject\imgs\HT.jpg')
+img = cv2.imread('D:\Git\Private\ImageProcessingProject\imgs\CheeseBoard.jpg')
 gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
 edges = cv2.Canny(gray,50,150,apertureSize = 3)
 
@@ -20,4 +20,4 @@ for rho,theta in lines[0]:
 
     cv2.line(img,(x1,y1),(x2,y2),(0,0,255),2)
 
-cv2.imwrite('houghlines3.jpg',img)
+cv2.imwrite('D:\Git\Private\ImageProcessingProject\imgs\houghlines3.jpg',img)
