@@ -1,6 +1,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %Image Processing Final Project - Question 1 Histogram Equalization
-% This fuction will get a peth to the source image(B&W)
+% This fuction will get a path to the source image(B&W)
 %
 % In the end the fuction will save the file to the destination path and
 % return the image
