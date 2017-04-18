@@ -68,6 +68,11 @@ def show_hough_line(img, accumulator):
     plt.savefig('./../imgs/chess_out2.png', bbox_inches='tight')
     plt.show()
 
+def hough_simple_peaks(H, num_peaks):
+    ''' A function that returns the number of indicies = num_peaks of the
+        accumulator array H that correspond to local maxima. '''
+    indices = np.argpartition(H.flatten(), -2)[-num_peaks:]
+    return np.vstack(np.unravel_index(indices, H.shape)).T
 
 if __name__ == '__main__':
 
@@ -81,31 +86,43 @@ if __name__ == '__main__':
     cv2.imshow("Image - GreyScale", gray)
     cv2.waitKey(0)
 
+
     edges = cv2.Canny(gray, 150, 250, apertureSize=3)
     cv2.imshow("edges - after canny", edges)
     cv2.waitKey(0)
 
     accumulator, thetas, rhos = hough_line(edges)
 
-    idx = np.argmax(accumulator)
-    rho = rhos[idx / accumulator.shape[1]]
-    theta = thetas[idx % accumulator.shape[1]]
-    print "rho={0:.2f}, theta={1:.0f}".format(rho, np.rad2deg(theta))
 
-    a = np.cos(theta)
-    b = np.sin(theta)
-    x0 = a * rho
-    y0 = b * rho
-    x1 = int(x0 + 1000 * (-b))
-    y1 = int(y0 + 1000 * (a))
-    x2 = int(x0 - 1000 * (-b))
-    y2 = int(y0 - 1000 * (a))
+
+
+
+    R = hough_simple_peaks(accumulator,20)
+    print R
+    #idx = np.argmax(accumulator)
+    #rho = rhos[idx / accumulator.shape[1]]
+    #theta = thetas[idx % accumulator.shape[1]]
+    #print "rho={0:.2f}, theta={1:.0f}".format(rho, np.rad2deg(theta))
+    for i in range(len(R)):
+        # reverse engineer lines from rhos and thetas
+        rho = rhos[R[i][0]]
+        theta = thetas[R[i][1]]
+        a = np.cos(theta)
+        b = np.sin(theta)
+        x0 = a * rho
+        y0 = b * rho
+        x1 = int(x0 + 1000 * (-b))
+        y1 = int(y0 + 1000 * (a))
+        x2 = int(x0 - 1000 * (-b))
+        y2 = int(y0 - 1000 * (a))
+
+        cv2.line(img, (x1, y1), (x2, y2), (0, 0, 255), 2)
 
     cv2.imshow("imageafter",img)
     cv2.waitKey(0)
-    cv2.line(img, (x1, y1), (x2, y2), (0, 0, 255), 2)
-    cv2.imshow("imageafter2",img)
-    cv2.waitKey(0)
+    #cv2.line(img, (x1, y1), (x2, y2), (0, 0, 255), 2)
+    #cv2.imshow("imageafter2",img)
+    #cv2.waitKey(0)
 
 '''
     imgpath = './../imgs/chess.png'
