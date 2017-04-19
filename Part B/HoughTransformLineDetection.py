@@ -2,7 +2,6 @@
 import numpy as np
 import cv2
 import copy
-import matplotlib.pyplot as plt
 
 def hough_line(canny_image):
     """
@@ -44,41 +43,6 @@ def hough_line(canny_image):
             accumulator[rho, t_idx] += 1
 
     return accumulator, thetas, rhos
-
-def show_hough_line(img, accumulator, rhos, thetas):
-    '''# ! Delete this before submission'''
-    import matplotlib.pyplot as plt
-
-    fig, ax = plt.subplots(1, 2, figsize=(10, 10))
-
-    ax[0].imshow(img, cmap=plt.cm.gray)
-    ax[0].set_title('Input image')
-    ax[0].axis('image')
-
-    ax[1].imshow(
-        accumulator, cmap='jet',
-        extent=[np.rad2deg(thetas[-1]), np.rad2deg(thetas[0]), rhos[-1], rhos[0]])
-    ax[1].set_aspect('equal', adjustable='box')
-    ax[1].set_title('Hough transform')
-    ax[1].set_xlabel('Angles (degrees)')
-    ax[1].set_ylabel('Distance (pixels)')
-    ax[1].axis('image')
-
-    # plt.axis('off')
-    plt.savefig('./../imgs/chess_out2.png', bbox_inches='tight')
-    plt.show()
-
-def plot_hough_acc(H, plot_title='Hough Accumulator Plot'):
-    ''' A function that plot a Hough Space using Matplotlib. '''
-    '''# ! Delete this before submission'''
-    fig = plt.figure(figsize=(10, 10))
-    fig.canvas.set_window_title(plot_title)
-
-    plt.imshow(H, cmap='jet')
-
-    plt.xlabel('Theta Direction'), plt.ylabel('Rho Direction')
-    plt.tight_layout()
-    plt.show()
 
 def find_hough_peaks(accumulator, num_peaks):
     ''' A function that returns the number of peaks = num_peaks of the
@@ -128,14 +92,6 @@ def hough_transform_line_detection(original_image, grayscale_image, sigma, num_p
     #! understand variables
     accumulator, thetas, rhos = hough_line(canny_image)
 
-    #show the hough line
-    #! think about removing this before submission
-    show_hough_line(canny_image,accumulator,rhos,thetas)
-
-    #show the hough line
-    #! think about removing this before submission
-    plot_hough_acc(accumulator)
-
     # find peaks in the accumulator matrix
     peaks_found = find_hough_peaks(accumulator,num_peaks)
 
@@ -147,9 +103,9 @@ def hough_transform_line_detection(original_image, grayscale_image, sigma, num_p
 if __name__ == '__main__':
 
     # variables
-    image_path = './imgs/cinary_crosses.jpg'
+    image_path = './imgs/CheeseBoard.jpg'
     result_image_path = './imgs/results.jpg'
-    num_peaks = 15
+    num_peaks = 10
     sigma = 0.5
 
     # get the image and convert to a greyscale image

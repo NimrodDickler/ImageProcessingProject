@@ -11,7 +11,7 @@ secondCopyOfImage = imageAfterDouble;
 
 %creating the mark
 a = zeros(80,150); %defining the black frame
-a(2:15,4:40) = 1; %defining the white reqtangle
+a(2:15,4:40) = 1; %defining the white rectangle 
 figure,imshow(a);
 save m.dat a -ascii %saves the mark
 

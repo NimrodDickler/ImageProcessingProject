@@ -13,7 +13,7 @@
     <SUITE FILE_PATH="coverage/Part_B$Hough3.coverage" NAME="Hough3 Coverage Results" MODIFIED="1492536597656" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/alyssaq" />
     <SUITE FILE_PATH="coverage/Part_B$hough_transform.coverage" NAME="hough_transform Coverage Results" MODIFIED="1492422643163" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/alyssaq" />
     <SUITE FILE_PATH="coverage/Part_B$HoughLines.coverage" NAME="HoughLines Coverage Results" MODIFIED="1492432881244" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Part_B$HoughTransformLineDetection.coverage" NAME="HoughTransformLineDetection Coverage Results" MODIFIED="1492545363035" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Part_B$HoughTransformLineDetection.coverage" NAME="HoughTransformLineDetection Coverage Results" MODIFIED="1492618559300" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Part_B$Hough4.coverage" NAME="Hough4 Coverage Results" MODIFIED="1492537037472" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/alyssaq" />
     <SUITE FILE_PATH="coverage/Part_B$TestAnotherHough.coverage" NAME="TestAnotherHough Coverage Results" MODIFIED="1492537233040" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/alyssaq" />
     <SUITE FILE_PATH="coverage/Part_B$hough_transform_fixed.coverage" NAME="hough_transform_fixed Coverage Results" MODIFIED="1492538318708" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/alyssaq" />
@@ -21,80 +21,15 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="hough_transform_fixed.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/alyssaq/hough_transform_fixed.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="74" column="58" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="74" selection-end-column="58" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-                <element signature="e#94#1525#0" expanded="false" />
-                <element signature="e#94#543#1" expanded="false" />
-                <element signature="e#1570#2185#0" expanded="false" />
-                <element signature="e#2229#2482#0" expanded="false" />
-                <element signature="e#3763#4856#1" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="HoughTransformLineDetection.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/HoughTransformLineDetection.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="145" column="0" lean-forward="true" selection-start-line="145" selection-start-column="0" selection-end-line="145" selection-end-column="0" />
+            <state relative-caret-position="34">
+              <caret line="32" column="75" lean-forward="true" selection-start-line="32" selection-start-column="75" selection-end-line="32" selection-end-column="75" />
               <folding>
                 <element signature="e#9#27#0" expanded="true" />
-                <element signature="e#117#1393#0" expanded="false" />
-                <element signature="e#117#455#1" expanded="false" />
-                <element signature="e#1452#2111#0" expanded="false" />
-                <element signature="e#2177#2497#0" expanded="false" />
-                <element signature="e#2549#2832#0" expanded="false" />
-                <element signature="e#2898#3643#0" expanded="false" />
-                <element signature="e#3758#4831#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestAnotherHough.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/alyssaq/TestAnotherHough.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="123">
-              <caret line="127" column="0" lean-forward="false" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
-              <folding>
-                <element signature="e#10#28#0" expanded="true" />
-                <element signature="e#3483#5443#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Hough3.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/alyssaq/Hough3.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="31" />
-              <folding>
-                <element signature="e#98#108#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Hough4.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/alyssaq/Hough4.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-816">
-              <caret line="0" column="3" lean-forward="false" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
-              <folding>
-                <element signature="e#3535#4267#0" expanded="false" />
-                <element signature="e#4288#4602#0" expanded="false" />
-                <element signature="e#4689#4834#0" expanded="false" />
-                <element signature="e#4862#5202#0" expanded="false" />
-                <element signature="e#5238#5532#0" expanded="false" />
-                <element signature="e#5553#6094#0" expanded="false" />
-                <element signature="e#6156#6792#0" expanded="false" />
+                <element signature="e#1413#1696#0" expanded="false" />
+                <element signature="e#1762#2507#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -124,6 +59,7 @@
         <option value="$PROJECT_DIR$/alyssaq/Hough4.py" />
         <option value="$PROJECT_DIR$/alyssaq/hough_transform_fixed.py" />
         <option value="$PROJECT_DIR$/alyssaq/TestAnotherHough.py" />
+        <option value="$PROJECT_DIR$/ShowHoughTransform.py" />
         <option value="$PROJECT_DIR$/HoughTransformLineDetection.py" />
       </list>
     </option>
@@ -494,18 +430,19 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16837482" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3769716" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3769716" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12591508" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -530,11 +467,6 @@
           <line>21</line>
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/HoughLines.py</url>
-          <line>15</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/alyssaq/hough_transform_fixed.py</url>
           <line>101</line>
           <option name="timeStamp" value="7" />
@@ -544,8 +476,13 @@
           <line>99</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/HoughTransformLineDetection.py</url>
+          <line>76</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="17" />
+      <option name="time" value="18" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
@@ -566,125 +503,58 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/HoughLines.py">
+    <entry file="file://$PROJECT_DIR$/HoughTransformLineDetection.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#9#27#0" expanded="true" />
+            <element signature="e#1413#1696#0" expanded="false" />
+            <element signature="e#1762#2507#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HoughLines.py">
+    <entry file="file://$PROJECT_DIR$/ShowHoughTransform.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="51">
+          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/alyssaq/hough_transform_fixed.py" />
+    <entry file="file://$PROJECT_DIR$/alyssaq/TestAnotherHough.py" />
+    <entry file="file://$PROJECT_DIR$/alyssaq/Hough3.py" />
+    <entry file="file://$PROJECT_DIR$/alyssaq/Hough4.py" />
+    <entry file="file://$PROJECT_DIR$/HoughTransformLineDetection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2465">
+          <caret line="145" column="0" lean-forward="true" selection-start-line="145" selection-start-column="0" selection-end-line="145" selection-end-column="0" />
           <folding>
-            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#9#27#0" expanded="true" />
+            <element signature="e#1413#1696#0" expanded="false" />
+            <element signature="e#1762#2507#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Q2A/HoughTransform.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Q2A/HoughTransformP.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Q2/hough_lines_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Q2/hough_transform.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HoughLines.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Q2A/HoughTransform.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Q2A/HoughTransformP.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Q2/hough_lines_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Q2/hough_transform.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Q2A/houghlines3.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Q2/hough_lines_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-153">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Q2A/HoughTransformP.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="12" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Q2A/HoughTransform.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="18" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Q2/hough_transform.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-454">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/HoughLines.py" />
+    <entry file="file://$PROJECT_DIR$/HoughLines.py" />
+    <entry file="file://$PROJECT_DIR$/../Q2A/HoughTransform.py" />
+    <entry file="file://$PROJECT_DIR$/../Q2A/HoughTransformP.py" />
+    <entry file="file://$PROJECT_DIR$/../Q2/hough_lines_test.py" />
+    <entry file="file://$PROJECT_DIR$/../Q2/hough_transform.py" />
+    <entry file="file://$PROJECT_DIR$/HoughLines.py" />
+    <entry file="file://$PROJECT_DIR$/../Q2A/HoughTransform.py" />
+    <entry file="file://$PROJECT_DIR$/../Q2A/HoughTransformP.py" />
+    <entry file="file://$PROJECT_DIR$/../Q2/hough_lines_test.py" />
+    <entry file="file://$PROJECT_DIR$/../Q2/hough_transform.py" />
+    <entry file="file://$PROJECT_DIR$/../Q2A/houghlines3.jpg" />
+    <entry file="file://$PROJECT_DIR$/../Q2/hough_lines_test.py" />
+    <entry file="file://$PROJECT_DIR$/../Q2A/HoughTransformP.py" />
+    <entry file="file://$PROJECT_DIR$/../Q2A/HoughTransform.py" />
+    <entry file="file://$PROJECT_DIR$/../Q2/hough_transform.py" />
     <entry file="file://$PROJECT_DIR$/imgs/CheeseBoard.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -699,7 +569,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1684">
           <caret line="2311" column="0" lean-forward="false" selection-start-line="2311" selection-start-column="0" selection-end-line="2311" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -707,7 +576,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="181">
           <caret line="355" column="0" lean-forward="false" selection-start-line="355" selection-start-column="0" selection-end-line="355" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -715,7 +583,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -723,95 +590,31 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="181">
           <caret line="1136" column="0" lean-forward="false" selection-start-line="1136" selection-start-column="0" selection-end-line="1136" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/alyssaq/Hough3.py" />
+    <entry file="file://$PROJECT_DIR$/alyssaq/Hough4.py" />
+    <entry file="file://$PROJECT_DIR$/alyssaq/hough_transform.py" />
+    <entry file="file://$PROJECT_DIR$/HoughLines.py" />
+    <entry file="file://$PROJECT_DIR$/alyssaq/hough_transform_fixed.py" />
+    <entry file="file://$PROJECT_DIR$/alyssaq/TestAnotherHough.py" />
+    <entry file="file://$PROJECT_DIR$/ShowHoughTransform.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/alyssaq/Hough3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="31" />
-          <folding>
-            <element signature="e#98#108#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/alyssaq/Hough4.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-816">
-          <caret line="0" column="3" lean-forward="false" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
-          <folding>
-            <element signature="e#3535#4267#0" expanded="false" />
-            <element signature="e#4288#4602#0" expanded="false" />
-            <element signature="e#4689#4834#0" expanded="false" />
-            <element signature="e#4862#5202#0" expanded="false" />
-            <element signature="e#5238#5532#0" expanded="false" />
-            <element signature="e#5553#6094#0" expanded="false" />
-            <element signature="e#6156#6792#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/alyssaq/hough_transform.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-578">
-          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HoughLines.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="26" selection-end-column="53" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/alyssaq/hough_transform_fixed.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="74" column="58" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="74" selection-end-column="58" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-            <element signature="e#94#1525#0" expanded="false" />
-            <element signature="e#94#543#1" expanded="false" />
-            <element signature="e#1570#2185#0" expanded="false" />
-            <element signature="e#2229#2482#0" expanded="false" />
-            <element signature="e#3763#4856#1" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/alyssaq/TestAnotherHough.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="127" column="0" lean-forward="false" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
-          <folding>
-            <element signature="e#10#28#0" expanded="true" />
-            <element signature="e#3483#5443#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/HoughTransformLineDetection.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="145" column="0" lean-forward="true" selection-start-line="145" selection-start-column="0" selection-end-line="145" selection-end-column="0" />
+        <state relative-caret-position="34">
+          <caret line="32" column="75" lean-forward="true" selection-start-line="32" selection-start-column="75" selection-end-line="32" selection-end-column="75" />
           <folding>
             <element signature="e#9#27#0" expanded="true" />
-            <element signature="e#117#1393#0" expanded="false" />
-            <element signature="e#117#455#1" expanded="false" />
-            <element signature="e#1452#2111#0" expanded="false" />
-            <element signature="e#2177#2497#0" expanded="false" />
-            <element signature="e#2549#2832#0" expanded="false" />
-            <element signature="e#2898#3643#0" expanded="false" />
-            <element signature="e#3758#4831#0" expanded="false" />
+            <element signature="e#1413#1696#0" expanded="false" />
+            <element signature="e#1762#2507#0" expanded="false" />
           </folding>
         </state>
       </provider>
