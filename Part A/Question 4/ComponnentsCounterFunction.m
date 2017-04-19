@@ -1,17 +1,24 @@
 function [] = ComponnentsCounterFunction(image,threshold)
+   %// resize the image to 500X500 for the process not to take long
     newSizeImage = imresize(image, [500 500]);
+
+   %// convert the image to b&w
     newSizeImage = im2bw(newSizeImage,threshold);
-   % figure('Name','newSizeImage','NumberTitle','off'),imshow(newSizeImage);
+
+   %// figure('Name','newSizeImage','NumberTitle','off'),imshow(newSizeImage);
+   %// Create a Visited array in the size of the image and initialize it with false values.
     visited = false(size(newSizeImage));
+   %//
     [rows,cols] = size(newSizeImage);
     B = zeros(rows,cols);
     componment_marker = 1;
 
-    %// goes over every coordinate in the matrix
+    %//goes over every coordinate in the matrix
     for row = 1 : rows
         for col = 1 : cols
-            % checks if the point had been visited or not, if not mark it
-            % as visited                   
+
+            %// checks if the point had been visited or not, if not mark it
+            %// as visited                 
             if newSizeImage(row,col) == 0
                 visited(row,col) = true;
 
@@ -19,6 +26,7 @@ function [] = ComponnentsCounterFunction(image,threshold)
             elseif visited(row,col)
                 continue;
             
+	    %// We found an unvisited cell and it's not zero (meaning a compunent)
             else
                 %// Initialize the stack with this point
                 stack = [row col];
