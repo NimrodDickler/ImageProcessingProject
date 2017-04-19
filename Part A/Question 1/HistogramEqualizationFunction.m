@@ -1,9 +1,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %Image Processing Final Project - Question 1 Histogram Equalization
-% This fuction will get a path to the source image(B&W)
+% This fuction will get he source image(B&W)
 %
-% In the end the fuction will save the file to the destination path and
-% return the image
+% In the end the fuction will return the image after Histogram Equalization
+% and the histogram
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 function [HEImage,HEImageHistogram] = HistogramEqualizationFunction(sourceImage)
     
@@ -41,18 +41,16 @@ function [HEImage,HEImageHistogram] = HistogramEqualizationFunction(sourceImage)
     cdf=(zeros(256,1));
     
     %Calculate the cummulative probability distribution function
-    %(***)   
     cdf(1) = pdf(1);
     for i=2:256
         %adding the pdf value to the cfd array
         cdf(i)= cdf(i-1)+ pdf(i);
     end
     
-    %Create an *** array full of zeros
+    %Create an output array full of zeros
     output = (zeros(256,1));
     
-    %Calculate the ** total results.
-    %(***)   
+    %create an output array with a more "balanced" grey levels
     for i=1:256
         output(i) = round(cdf(i)*255); 
     end
@@ -60,7 +58,8 @@ function [HEImage,HEImageHistogram] = HistogramEqualizationFunction(sourceImage)
     %initialize array for the new image
     HEImage=uint8(zeros(rows,columns));
     
-    %apply the output array on the original image to create a histogram equalized image 
+    %apply the output array on the original image to create a histogram
+    %equalized image (balance the image intensities)
     for i=1:rows
         for j=1:columns
 			HEImage(i,j)=output(sourceImage(i,j)+1);
@@ -68,9 +67,7 @@ function [HEImage,HEImageHistogram] = HistogramEqualizationFunction(sourceImage)
     end
     
     %create a histogram of the new image
-    HEImageHistogram = CreateHistogram(HEImage);
-    imshow(HEImageHistogram);
-    
+    HEImageHistogram = CreateHistogram(HEImage);    
 end
 
 
