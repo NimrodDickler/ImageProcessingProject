@@ -1,37 +1,34 @@
 function WaterMark(URL)
 
-
-
-
-%reads the image in double format
+%reads the image in double numbers
 imageAfterDouble = double(imread(URL));
-figure,imshow(imageAfterDouble/255);
+figure('Name','Source Image','NumberTitle','on'),imshow(imageAfterDouble/255);
 secondCopyOfImage = imageAfterDouble;
-[rows,cols] = size(secondCopyOfImage);
+%%%[rows,cols] = size(secondCopyOfImage);
 
-%creating the mark
-a = zeros(80,150); %defining the black frame
-a(2:15,4:40) = 1; %defining the white rectangle 
-figure,imshow(a);
-save m.dat a -ascii %saves the mark
+%creating the mark image
+watermark = zeros(80,150); %defining the black frame
+watermark(2:15,4:40) = 1; %defining the white rectangle image the watermarked image
+figure('Name','Watermark','NumberTitle','on'),imshow(watermark);
+save m.dat watermark -ascii %saves the mark to a file
 
 %water marking
-x1 = imageAfterDouble(:,:,1);%defining the RGB compoments
-x2 = imageAfterDouble(:,:,2);%defining the RGB compoments
-x3 = imageAfterDouble(:,:,3);%defining the RGB compoments
-dx1 = dct2(x1); dx11 = dx1;%returning the 2-D cosine transfom for each of the RGB
-dx2 = dct2(x2); dx22 = dx2;%returning the 2-D cosine transfom for each of the RGB
-dx3 = dct2(x3); dx33 = dx3;%returning the 2-D cosine transfom for each of the RGB
+x1 = imageAfterDouble(:,:,1);%creating the RGB compoments
+x2 = imageAfterDouble(:,:,2);%creating the RGB compoments
+x3 = imageAfterDouble(:,:,3);%creating the RGB compoments
+dx1 = dct2(x1);%%% dx11 = dx1;%returning the 2-D cosine transfom for each of the RGB
+dx2 = dct2(x2);%%% dx22 = dx2;%returning the 2-D cosine transfom for each of the RGB
+dx3 = dct2(x3);%%% dx33 = dx3;%returning the 2-D cosine transfom for each of the RGB
 load m.dat %binary mask for water marking
 g = 10; %water mark coefficient- the bigger it is the more visible the mark will become
 [rm,cm] = size(m);%putting the size of m into rows and columns
 dx1(1:rm,1:cm) = dx1(1:rm,1:cm) + g * m; %adding the new data of g and m into the red
 dx2(1:rm,1:cm) = dx2(1:rm,1:cm) + g * m; %adding the new data of g and m into the green
 dx3(1:rm,1:cm) = dx3(1:rm,1:cm) + g * m; %adding the new data of g and m into the blue
-figure,imshow(dx1); %showing the new red
-figure,imshow(dx2); %showing the new green
-figure,imshow(dx3); %showing the new blue
-
+figure('Name','Red Compoments','NumberTitle','on'),imshow(dx1); %showing the new red compoments in the dtc space
+figure('Name','Green Compoments','NumberTitle','on'),imshow(dx2); %showing the new green compoments in the dtc space
+figure('Name','Blue Compoments','NumberTitle','on'),imshow(dx3); %showing the new blue compoments in the dtc space
+ 
 %performing the inverse
 y1 = idct2(dx1); %putting the 2-D cosine transform of red in y1
 y2 = idct2(dx2); %putting the 2-D cosine transform of green in y2
@@ -49,7 +46,7 @@ figure; imshow(abs(secondCopyOfImage-imageAfterDouble)*100); %shows the differen
 
 
 z = secondCopyOfImage;
-[r,c,s] = size(z); %putting the dize of the water marked  image into r,c and s
+%%%[r,c,s] = size(z); %putting the dize of the water marked  image into r,c and s
 
 %removing the water mark
 %clean image (known mask)
@@ -67,7 +64,7 @@ yy(:,:,1) = y11; %yy's red initializes with y11
 yy(:,:,2) = y22; %yy's green initializes with y22 
 yy(:,:,3) = y33; %yy's blue initializes with y33
 figure; imshow(yy/255) %shows the image without the water mark
-figure; imshow(abs(yy-imageAfterDouble)*10000) %comparison showing all black image for no difference between yy and x
+figure; imshow(abs(yy-imageAfterDouble)*10000) %comparison showing all black image for no difference between yy and xx
 
 
 

@@ -1,0 +1,1 @@
+WaterMark('./imgs/birds.jpg')
